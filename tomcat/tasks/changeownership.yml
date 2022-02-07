@@ -1,0 +1,38 @@
+---
+- name: create tomcat directory and assign tomcat group
+  file:
+  path: /opt/tomcat/
+  state: directory
+  group: tomcat
+
+- name: premissions for tomcat group for conf
+  file:
+  path: /opt/tomcat/conf
+  state: directory
+  group: tomcat
+  mode : '0755'
+
+- name: change owner for webapps
+  file:
+    path: /opt/tomcat/webapps
+    state: directory
+    owner: tomcat
+
+- name: change owner for work
+  file:
+    path: /opt/tomcat/work
+    state: directory
+    owner: tomcat
+
+- name: change owner for temp
+  file:
+    path: /opt/tomcat/temp
+    state: directory
+    owner: tomcat
+
+- name: change owner for logs
+  file:
+    path: /opt/tomcat/logs
+    state: directory
+    owner: tomcat
+  

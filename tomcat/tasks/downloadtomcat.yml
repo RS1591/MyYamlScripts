@@ -1,0 +1,13 @@
+---
+- name: download tomcat
+  get_url:
+    url: https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.5/bin/apache-tomcat-8.5.5.tar.gz
+    dest: /home/ubuntu/
+    force_basic_auth: yes
+
+
+- name: extract tomcat
+  unarchive:
+      src: home/ubuntu/ apache-tomcat-8.5.5.tar.gz
+      dest: /opt/tomcat/
+      remote_src: yes
