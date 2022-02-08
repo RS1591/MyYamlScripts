@@ -6,6 +6,11 @@
     force_basic_auth: yes
 
 
+- name: create directory 
+  file:
+     path: /opt/tomcat/
+     state: directory
+     
 - name: extract tomcat
   unarchive:
       src: /home/ubuntu/apache-tomcat-8.5.5.tar.gz
