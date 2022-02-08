@@ -1,0 +1,14 @@
+---
+- hosts: tags_Name_Node
+  become: yes
+  gather_facts: no 
+  tasks:
+  - name: install apache2
+    apt:
+      name: mypack
+      state: present
+
+  - name: apache service restart
+    service:
+     state: start
+     
