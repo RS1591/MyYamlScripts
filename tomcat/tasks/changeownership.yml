@@ -17,22 +17,26 @@
     path: /opt/tomcat/webapps
     state: directory
     owner: tomcat
-
+    group: tomcat
 - name: change owner for work
   file:
     path: /opt/tomcat/work
     state: directory
     owner: tomcat
+    group: tomcat
 
 - name: change owner for temp
   file:
     path: /opt/tomcat/temp
     state: directory
-    owner: tomcat
+    owner: tomcat    
+    group: tomcat
+
 
 - name: change owner for logs
   file:
     path: /opt/tomcat/logs
     state: directory
     owner: tomcat
-  
+    group: tomcat
+
