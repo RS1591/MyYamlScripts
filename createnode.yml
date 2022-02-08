@@ -10,7 +10,7 @@
       instance_type: t2.micro
       count: 2
       wait: yes
-      group: default
+      group: Mygroup
       region: us-east-2
       vpc_subnet_id: subnet-0f3017669dbf55902
       assign_public_ip: yes
