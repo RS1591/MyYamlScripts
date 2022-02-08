@@ -14,7 +14,13 @@
       name: "{{ mywebpack }}"
       state: started
     tags: start
-    
+
   - name: debug
     debug:
       msg: "{{ ansible_os_family }}"
+    register: platform
+
+  - name: debug
+    debug:
+      msg: "{{ platform.stdout}}"
+  
