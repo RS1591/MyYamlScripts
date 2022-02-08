@@ -2,7 +2,7 @@
 - name: download tomcat
   get_url:
     url: https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.5/bin/apache-tomcat-8.5.5.tar.gz
-    dest: /home/ubuntu/
+    dest: /home/ubuntu/apache-tomcat-8.5.5.tar.gz
     force_basic_auth: yes
 
 
@@ -10,7 +10,7 @@
   file:
      path: /opt/tomcat/
      state: directory
-     
+
 - name: extract tomcat
   unarchive:
       src: /home/ubuntu/apache-tomcat-8.5.5.tar.gz
