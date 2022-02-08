@@ -1,7 +1,7 @@
 ---
 - hosts: tag_Name_Node
   become: yes
-  gather_facts: no 
+  gather_facts: yes
   tasks:
   - name: install apache2
     apt:
@@ -12,4 +12,6 @@
     service:
       name: "{{ mywebpack }}"
       state: started
-
+  - name: debug
+    debug:
+      msg: "ansible_os_family"
