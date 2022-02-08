@@ -1,6 +1,6 @@
 ---
 - hosts: tag_Name_Ubuntu
   become: yes
-  gather_facts: yes
+  gather_facts: no
   roles:
     - { role: tomcat , when: ansible_os_family=="Debian" }
