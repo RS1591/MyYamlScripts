@@ -1,0 +1,21 @@
+---
+- name: create tomcat user 
+  template:
+     src: templates/tomcat-user.j2
+     dest: /opt/tomcat/conf/tomcat-users.xml
+- name: manager app
+  template:
+     src: templates/Manager-app.j2
+     dest: /opt/tomcat/webapps/manager/META-INF/context.xml
+
+- name: host manager app
+  template:
+     src: templates/HostManager.j2
+     dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml
+
+- name: tomcat restart
+  systemd:
+     state: restarted
+     daemon-reload: yes
+     enabled: yes
+     name: tomcat
