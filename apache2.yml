@@ -7,11 +7,14 @@
     apt:
       name: "{{ mywebpack }}"
       state: present
+    tags: httpd
 
   - name: apache service restart
     service:
       name: "{{ mywebpack }}"
       state: started
+    tags: start
+    
   - name: debug
     debug:
       msg: "{{ ansible_os_family }}"
