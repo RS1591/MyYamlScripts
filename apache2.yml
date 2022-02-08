@@ -10,5 +10,6 @@
 
   - name: apache service restart
     service:
-     state: started
+      name: "{{ mywebpack }}"
+      state: started
 
