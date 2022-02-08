@@ -1,2 +1,2 @@
 
-mywebpack = apache2
+mywebpack: apache2
