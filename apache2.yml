@@ -10,5 +10,5 @@
 
   - name: apache service restart
     service:
-     state: start
+     state: started
 
