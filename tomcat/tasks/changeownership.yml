@@ -6,13 +6,26 @@
     recurse: yes
     group: tomcat
 
-- name: premissions for tomcat group for conf
-  file:
+#- name: premissions for tomcat group for conf
+ # file:
+  #  path: /opt/tomcat/conf
+   # state: directory
+    #recurse: yes
+    #group: tomcat
+    #mode : '0755'
+
+- name: premissions
+  file: 
+    path: /opt/tomcat/conf
+    recurse: yes
+    state: directory
+    mode: g+r
+
+- name: premissions
+  file: 
     path: /opt/tomcat/conf
     state: directory
-    recurse: yes
-    group: tomcat
-    mode : '0755'
+    mode: g+x
 
 - name: change owner for webapps
   file:

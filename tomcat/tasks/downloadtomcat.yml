@@ -11,8 +11,13 @@
      path: /opt/tomcat/
      state: directory
 
-- name: extract tomcat
-  unarchive:
-      src: /home/ubuntu/apache-tomcat-8.5.5.tar.gz
-      dest: /opt/tomcat/
-      remote_src: yes
+#- name: extract tomcat
+  #unarchive:
+   #   src: /home/ubuntu/apache-tomcat-8.5.5.tar.gz
+    #  dest: /opt/tomcat/
+     # remote_src: yes
+     
+- name: extract file
+  command: 
+    cmd: sudo tar xzvf /home/ubuntu/apache-tomcat-8.5.5.tar.gz -C /opt/tomcat --strip-components=1
+    create: /opt/tomcat/LICENSE
