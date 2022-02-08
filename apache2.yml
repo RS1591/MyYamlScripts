@@ -22,5 +22,5 @@
 
   - name: debug
     debug:
-      msg: "{{ platform.stdout}}"
+      msg: "{{ platform.stdout }}"
   
