@@ -5,7 +5,7 @@
   tasks:
   - name: install apache2
     apt:
-      name: "mywebpack"
+      name: mywebpack
       state: present
 
   - name: apache service restart
