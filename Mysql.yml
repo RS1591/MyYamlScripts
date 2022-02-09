@@ -2,9 +2,11 @@
 - hosts: tag_Name_Ubuntu
   become: yes
   tasks:
-  - name: install Mysql_db
-    mysql-python:
-     state: import
-     name: all
-     encoding: latin1
-     target: /tmp/dump.sql
+  - name: Install the Python MySQLB module
+    pip: 
+     name: MySQL-python
+
+  - name: Create the flask database
+    mysql_db: 
+     name: flask_db 
+     state: present
