@@ -2,16 +2,14 @@
 - hosts: tag_Name_Ubuntu
   become: yes
   tasks:
-  - name: Install python3 modules
+  - name : update cache
     apt:
-     name: python3-pip
+     update_cache: yes
+
+  - name: Install mysql-server
+    apt:
+     name: mysql-server
      state: present
 
-  - name: Install the Python MySQLB module
-    pip: 
-     name: MySQL-python
-
-  - name: Create the flask database
-    mysql_db: 
-     name: flask_db 
-     state: present
+  - name: 
+     command: mysql_secure_installation
