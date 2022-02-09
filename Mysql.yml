@@ -12,4 +12,4 @@
      state: present
 
   - name: 
-    command: mysql_secure_installation
+    command: sudo mysql_secure_installation
