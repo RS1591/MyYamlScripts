@@ -11,7 +11,7 @@
 
 - name: tomcat hostmanager context details
   template: 
-    src: templates/hostmana ger.j2
+    src: templates/hostmanager.j2
     dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml
 
 - name: system restarted
