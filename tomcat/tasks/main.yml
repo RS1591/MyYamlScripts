@@ -1,2 +1,7 @@
 ---
 # tasks file for tomcat
+- include_tasks: installjava.yml
+- include_tasks: createtomcatuser.yml
+- include_tasks: downloadtomcat.yml
+- include_tasks: premissions.yml
+- include_tasks: tomcatservice.yml
