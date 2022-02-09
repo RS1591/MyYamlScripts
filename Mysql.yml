@@ -1,0 +1,10 @@
+---
+- hosts: tag_Name_Ubuntu
+  become: yes
+  tasks:
+  - name: install Mysql_db
+    mysql_db:
+     state: import
+     name: all
+     encoding: latin1
+     target: /tmp/dump.sql
