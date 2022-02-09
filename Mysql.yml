@@ -2,7 +2,7 @@
 - hosts: tag_Name_Ubuntu
   become: yes
   tasks:
-  - name : update cache
+  - name: update cache
     apt:
      update_cache: yes
 
