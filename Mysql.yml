@@ -3,7 +3,7 @@
   become: yes
   tasks:
   - name: install Mysql_db
-    mysql_db:
+    mysql-python:
      state: import
      name: all
      encoding: latin1
