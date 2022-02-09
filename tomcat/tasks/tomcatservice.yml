@@ -8,3 +8,4 @@
   systemd: 
    daemon-reload: yes
    state: restarted
+   name: tomcat
