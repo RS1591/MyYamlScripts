@@ -1,9 +1,0 @@
----
-# tasks file for tomcat
-- include_tasks: installjava.yml
-- include_tasks: createtomcatuser.yml
-- include_tasks: downloadtomcat.yml
-- include_tasks: changeownership.yml
-- include_tasks: tomcatservice.yml
-- include_tasks: tomcatrestart.yml
-- include_tasks: tomcat-user.yml
