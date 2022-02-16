@@ -2,4 +2,4 @@
 # tasks file for haproxy
 
 - include_tasks: install_haproxy.yml
-- include_tasks: configure_haproxy.yml
+#- include_tasks: configure_haproxy.yml
