@@ -1,5 +1,5 @@
 ---
-- hosts: 172.31.29.237
+- hosts: 3.15.230.195
   become: yes
   roles:
    - role: haproxy
