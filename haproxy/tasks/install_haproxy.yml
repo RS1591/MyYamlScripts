@@ -7,4 +7,4 @@
   apt:
     name: haproxy
     state: absent
-    
+    become: yes
