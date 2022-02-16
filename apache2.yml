@@ -1,5 +1,5 @@
 ---
-- hosts: tag_Name_Node
+- hosts:  18.219.229.32 , 3.145.29.170
   become: yes
   gather_facts: yes
   tasks:
