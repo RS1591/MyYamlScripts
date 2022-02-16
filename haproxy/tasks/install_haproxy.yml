@@ -1,10 +1,10 @@
 ---
-- name: update cache
-  apt:
-    update_cache: yes
+#- name: update cache
+ # apt:
+  #  update_cache: yes
 
 - name: install haproxy
   apt:
     name: haproxy
     state: absent
-    become: yes
+ 
