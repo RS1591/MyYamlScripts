@@ -6,5 +6,5 @@
 - name: install haproxy
   apt:
     name: haproxy
-    state: absent
+    state: present
     
