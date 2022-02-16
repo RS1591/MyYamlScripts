@@ -7,4 +7,4 @@
 - name: restart
   service:
      name: haproxy
-     state: started
+     state: restarted
