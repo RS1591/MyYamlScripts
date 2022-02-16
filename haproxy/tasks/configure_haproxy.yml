@@ -5,6 +5,6 @@
     dest: "/etc/haproxy/haproxy.cfg"
 
 - name: restart
-  service:
+  systemd:
      name: haproxy
      state: restarted
