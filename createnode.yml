@@ -10,7 +10,7 @@
       instance_type: t2.micro
       count: 3
       wait: yes
-      group: Mysec
+      group: launch-wizard-1
       region: us-east-2
       vpc_subnet_id: subnet-0f3017669dbf55902
       assign_public_ip: yes
