@@ -1,8 +1,8 @@
 --- 
 - name: configure haproxy.cfg
    template:
-    src: /templates/haproxfcfg.j2
-    dest: /etc/haproxy/haproxy.cfg
+    src: "/templates/haproxfcfg.j2"
+    dest: "/etc/haproxy/haproxy.cfg"
 
 - name: restart
   service:
