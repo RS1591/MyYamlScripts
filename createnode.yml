@@ -6,7 +6,7 @@
   - name: create nodes
     ec2:
       key_name: key
-      image: ami-05803413c51f242b7
+      image: ami-0b3a8050edc0a783d
       instance_type: t2.micro
       count: 3
       wait: yes
