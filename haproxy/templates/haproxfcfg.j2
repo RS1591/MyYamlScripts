@@ -1,0 +1,12 @@
+frontend http80
+    bind *:80
+    timeout client 100s
+   default_backend web_servers
+
+    
+backend web_servers
+     timeout connect 10s
+     timeout server 100s
+    default-server check maxconn 20
+    server Ubuntu1 18.219.229.32:80 
+    server Ubuntu2 3.145.29.170:80 
