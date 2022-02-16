@@ -8,7 +8,7 @@
       key_name: key
       image: ami-0df1d29a521ce3454
       instance_type: t2.micro
-      count: 1
+      count: 3
       wait: yes
       group: Mygroup
       region: us-east-2
