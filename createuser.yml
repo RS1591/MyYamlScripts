@@ -3,14 +3,14 @@
   become: yes
   gather_facts: no
   tasks:
-  
-  - name: create group raghu
-    group: raghu
-    state: present
 
-  - name: create user raghu
-    user:
-     name: raghu
-     password: FSYIF7KizNvUg
-     shell: /bin/bash
+   - name: create group raghu
      group: raghu
+     state: present
+
+   - name: create user raghu
+     user:
+      name: raghu
+      password: FSYIF7KizNvUg
+      shell: /bin/bash
+      group: raghu
