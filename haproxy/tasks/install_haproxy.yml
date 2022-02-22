@@ -6,5 +6,10 @@
 - name: install haproxy
   apt:
     name: haproxy
-    state: absent
+    state: present
+
+- name:  haproxy service restart
+  service: 
+    name: haproxy
+    state: restarted
  
